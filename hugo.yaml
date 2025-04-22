@@ -1,6 +1,6 @@
 baseURL: 'https://example.org/'
 languageCode: 'en-us'
-title: 'My New Hugo Site'
+title: "Cheng Xi's HomePage"
 theme: 'PaperMod'
 copyright: "[©2025 Cheng Xi's Blog](https://a-derek-a.github.io/)"
 
