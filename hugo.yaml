@@ -14,6 +14,8 @@ buildExpired: false # 构建过期的内容
 pygmentsUseClasses: true
 defaultContentLanguageInSubdir: false # 是否要在地址栏加上默认的语言代码
 
+
+
 taxonomies: # 分类系统
   category: categories
   tag: tags
@@ -33,16 +35,19 @@ menus:
       pageRef: search/
       weight: 4
 
-outputs:
-  home:
-    - HTML # 生成的静态页面
-    - RSS # 这个其实无所谓
-    - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下
 
 params:
+  author: Cheng Xi
+  env: production
+  defaultTheme: auto
+  ShowAllPagesInArchive: true
+  ShowToc: true # 是否显示目录
+  ShowBreadCrumbs: true # 是否显示面包屑
+  ShowReadingTime: true # 是否显示阅读时间
+  ShowWordCount: true # 是否显示字数
   homeInfoParams:
-    Title: Hi there wave
-    Content: Derek
+    Title: Cheng Xi, 👋
+    Content: A first-year Master student at Shang Hai Jiao Tong University (SJTU).
   socialIcons: # optional
     - name: "GitHub"
       url: "https://github.com/a-derek-a/"
@@ -59,6 +64,12 @@ params:
     # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: [ "title", "permalink", "summary", "content" ]
     includeMatches: true
+
+outputs:
+  home:
+    - HTML # 生成的静态页面
+    - RSS # 这个其实无所谓
+    - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下
 
 caches:
   images:
