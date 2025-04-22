@@ -52,7 +52,7 @@ params:
     - name: "GitHub"
       url: "https://github.com/a-derek-a/"
     - name: "Bilibili"
-      url: "https://www.bilibili.com"
+      url: "https://www.bilibili.com/35061985"
 
   fuseOpts:
     isCaseSensitive: false # 是否大小写敏感
